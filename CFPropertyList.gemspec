@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "CFPropertyList"
+  s.name = "tk_cfpropertylist"
   s.version = "2.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = "cjk@wwwtech.de"
   s.extra_rdoc_files = ["README"]
   s.files = ["README"]
-  s.homepage = "http://github.com/ckruse/CFPropertyList"
+  s.homepage = "http://github.com/kaomte/CFPropertyList"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.14"
