@@ -431,7 +431,7 @@ end
 class Array
   # convert an array to plist format
   def to_plist(options={})
-    options[:plist_format] ||= CFPropertyList::List::FORMAT_BINARY
+    options[:plist_format] ||= CFPropertyList::List::FORMAT_XML
 
     plist = CFPropertyList::List.new
     plist.value = CFPropertyList.guess(self, options)
@@ -442,7 +442,7 @@ end
 class Enumerator
   # convert an array to plist format
   def to_plist(options={})
-    options[:plist_format] ||= CFPropertyList::List::FORMAT_BINARY
+    options[:plist_format] ||= CFPropertyList::List::FORMAT_XML
 
     plist = CFPropertyList::List.new
     plist.value = CFPropertyList.guess(self, options)
@@ -453,7 +453,7 @@ end
 class Hash
   # convert a hash to plist format
   def to_plist(options={})
-    options[:plist_format] ||= CFPropertyList::List::FORMAT_BINARY
+    options[:plist_format] ||= CFPropertyList::List::FORMAT_XML
 
     plist = CFPropertyList::List.new
     plist.value = CFPropertyList.guess(self, options)
